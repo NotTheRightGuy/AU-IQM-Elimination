@@ -5,9 +5,11 @@ function Header() {
     return (
         <div className="header">
             <div className="website-info">
-                <div className="Logo">
-                    <img src="../assets/shopoholic.png" alt="" />
-                </div>
+                {/* <div className="Logo">
+                    <button>
+                        <img src="../assets/shopoholic.png" alt="" />
+                    </button>
+                </div> */}
                 <div className="website-name">Shopoholic</div>
             </div>
 
