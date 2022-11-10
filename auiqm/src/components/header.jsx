@@ -37,10 +37,10 @@ function Header() {
                 </div>
 
                 <div className="Profile">
-                    <button>
+                    <button href="../Profile/signup.php">
                         <img
                             className="profile-pic"
-                            src="https://img.icons8.com/ios-filled/50/null/guest-male--v1.png" href="../Profile/signup.php"
+                            src="https://img.icons8.com/ios-filled/50/null/guest-male--v1.png"
                         />
                     </button>
                 </div>
