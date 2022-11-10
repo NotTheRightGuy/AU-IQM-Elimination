@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Item from "./items";
 
 import data from "../data.json";
@@ -7,7 +7,7 @@ window.addEventListener("click", (e) => {
     let parent = e.target.parentElement;
     if (parent.className == "items") {
         const link = parent.firstChild.innerText;
-        window.open(`https://amazon.in${link}`, "_blank");
+        window.open(`https://amazon.com${link}`, "_blank");
     }
 });
 
