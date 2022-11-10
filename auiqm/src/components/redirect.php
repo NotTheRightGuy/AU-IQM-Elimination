@@ -1,3 +1,3 @@
 <?php
-header("Location: localhost/test/signup.php");
+header("Location: ../Profile/signup.php");
 ?>
