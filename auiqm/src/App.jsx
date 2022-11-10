@@ -1,13 +1,12 @@
-import react from 'react'
 import './App.css'
+import Header from './components/header';
+
 
 function App() {
 
   return (
     <div className="App">
-      <div className='text-2xl font-bold'>
-      "How do you make something right, when you made it so wrong you can never go back"
-    </div>
+      <Header />
     </div>
   )
 }

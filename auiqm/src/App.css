@@ -1,41 +1,41 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+.header {
+    height: 100px;
+    width: 100%;
+    background-color: #febe8c;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.website-name {
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-bar {
+    width: 100%;
+}
+.cart {
+    margin-left: 200px;
+    transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.cart:hover {
+    transform: translateY(-8px);
 }
 
-.card {
-  padding: 2em;
+.order-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.read-the-docs {
-  color: #888;
+.order-requests {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
 }
