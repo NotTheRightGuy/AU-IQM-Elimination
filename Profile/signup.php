@@ -31,7 +31,8 @@ if (isset($_POST['submit'])) {
     $query = "INSERT INTO users (username, email, password) VALUES ('$userName', '$email', '$my_password')";
     $result = mysqli_query($conn, $query);
     if ($result) {
-        echo "<div class='alert alert-success'>New record created successfully</div>";
+        header("Location: https://auiqm.netlify.app");
+        // echo "<div class='alert alert-success'>New record created successfully</div>";
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -84,7 +85,7 @@ if (isset($_POST['submit'])) {
 
             <br>
 
-            <a type="submit" value="Sign Up" name="submit" href="../auiqm/index.html">Sign Up</a>
+            <button type="submit" value="Sign Up" name="submit">Sign Up</button>
             <br>
         </form>
     </div>
