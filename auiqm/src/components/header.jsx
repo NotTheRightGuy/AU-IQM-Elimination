@@ -40,7 +40,7 @@ function Header() {
                     <button>
                         <img
                             className="profile-pic"
-                            src="https://img.icons8.com/ios-filled/50/null/guest-male--v1.png" href="localhost/test/signup.php"
+                            src="https://img.icons8.com/ios-filled/50/null/guest-male--v1.png" href="../Profile/signup.php"
                         />
                     </button>
                 </div>
