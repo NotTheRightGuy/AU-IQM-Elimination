@@ -2,7 +2,10 @@ from selectorlib import Extractor
 import requests 
 import json 
 from time import sleep
+
 import glob
+
+
 
 # Create an Extractor by reading from the YAML file
 e = Extractor.from_yaml_file('search_results.yml')
@@ -36,7 +39,7 @@ def scrape(url):
     return e.extract(r.text)
 
 # product_data = []
-with open("search_results_urls.txt",'r') as urllist, open('search_results_output.jsonl','w') as outfile:
+with open("search_url.txt",'r') as urllist, open('search_output.jsonl','w') as outfile:
     for url in urllist.read().splitlines():
         data = scrape(url) 
         if data:
@@ -46,9 +49,9 @@ with open("search_results_urls.txt",'r') as urllist, open('search_results_output
                 json.dump(product,outfile)
                 outfile.write("\n")
                 # sleep(5)
-    
 
-files = [f for f in glob.glob( "/Users/hardiksanghvi/Documents/GitHub/AU-IQM-Elimination/auiqm/amazon-scraper-master" + "**/*.jsonl", recursive=True)]
+
+files = [f for f in glob.glob( "auiqm/amazon-scraper-master" + "**/*.jsonl", recursive=True)]
 
 for f in files:
 
@@ -56,7 +59,8 @@ for f in files:
         i = 1
         for row in F:
 #saving every line as new json file
-            with open("/Users/hardiksanghvi/Documents/GitHub/AU-IQM-Elimination/auiqm/amazon-scraper-master"+"/file-"+str(i)+".json", 'wb') as f:
+            with open("auiqm/amazon-scraper-master"+"/file-"+str(i)+".json", 'wb') as f:
                 print(f)
                 f.write(row)
                 i+=1
+    
