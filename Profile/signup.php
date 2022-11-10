@@ -31,7 +31,6 @@ if (isset($_POST['submit'])) {
     $query = "INSERT INTO users (username, email, password) VALUES ('$userName', '$email', '$my_password')";
     $result = mysqli_query($conn, $query);
     if ($result) {
-        header('Location: index.html');
         echo "<div class='alert alert-success'>New record created successfully</div>";
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
@@ -85,7 +84,7 @@ if (isset($_POST['submit'])) {
 
             <br>
 
-            <button type="submit" value="Sign Up" name="submit">Sign Up
+            <a type="submit" value="Sign Up" name="submit" href="../auiqm/index.html">Sign Up</a>
             <br>
         </form>
     </div>
