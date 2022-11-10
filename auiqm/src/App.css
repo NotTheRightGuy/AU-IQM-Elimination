@@ -26,7 +26,7 @@
 }
 
 .cart:hover {
-    transform: translateY(-8px);
+    transform: translateY(-4px);
 }
 
 .order-info {
@@ -38,4 +38,9 @@
 .order-requests {
     font-family: "Rubik", sans-serif;
     font-size: 18px;
+    transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.order-requests:hover {
+    transform: translateY(-4px);
 }
