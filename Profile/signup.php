@@ -65,23 +65,25 @@ if (isset($_POST['submit'])) {
                         // echo $_SERVER['PHP_SELF'];
                         echo htmlspecialchars($_SERVER["PHP_SELF"]);
                         ?>" method="post">
-            <small class="text-danger">* <?php 
+            Username<small class="text-danger">* <?php 
             if(isset($nameError)){
                 echo $nameError;
             } ?></small>
             <input type="text" placeholder="Username" name="userName">
             <br>
 
-            <small class="text-danger">* <?php if(isset($emailError)){
+            Email<small class="text-danger">* <?php if(isset($emailError)){
                 echo $emailError;
             } ?></small>
             <input type="text" placeholder="Email" name="email">
             <br>
 
-            <small class="text-danger">* <?php if(isset($passwordError)){
+            Password<small class="text-danger">* <?php if(isset($passwordError)){
                 echo $passwordError;
             } ?></small>
             <input type="password" placeholder="Password" name="pass_word">
+
+            <br>
 
             <button type="submit" value="Sign Up" name="submit">Sign Up
             <br>
