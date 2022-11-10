@@ -37,7 +37,7 @@ function Header() {
                 </div>
 
                 <div className="Profile">
-                    <button formAction="http://localhost/test/signup.php">
+                    <button formAction="http://localhost:8000/test/signup.php">
                         <img
                             className="profile-pic"
                             src="https://img.icons8.com/ios-filled/50/null/guest-male--v1.png"
