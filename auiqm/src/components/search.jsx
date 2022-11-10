@@ -1,17 +1,19 @@
 import React, { Component } from "react";
+import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 
 function Search() {
     return (
-        <div className="search-bar">
-            <div class="form-outline">
-                <input
-                    type="search"
-                    id="form1"
-                    class="form-control"
-                    placeholder="Search Among Millions of Products"
-                    aria-label="Search"
-                />
-            </div>
+        <div class="input-group">
+            <input
+                type="search"
+                class="form-control rounded"
+                placeholder="Search"
+                aria-label="Search"
+                aria-describedby="search-addon"
+            />
+            <button type="button" class="btn btn-outline-primary">
+                search
+            </button>
         </div>
     );
 }
