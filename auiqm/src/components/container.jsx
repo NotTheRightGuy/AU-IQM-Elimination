@@ -3,6 +3,14 @@ import Item from "./items";
 
 import data from "../data.json";
 
+window.addEventListener("click", (e) => {
+    let parent = e.target.parentElement;
+    if (parent.className == "items") {
+        const link = parent.firstChild.innerText;
+        window.open(`https://amazon.in${link}`, "_blank");
+    }
+});
+
 function Container() {
     return (
         <div className="container">
@@ -11,8 +19,7 @@ function Container() {
                     image={item.image}
                     title={item.title}
                     price={item.price}
-                    reviews={item.price}
-                    ratings={item.ratings}
+                    url={item.url}
                 />
             ))}
         </div>
