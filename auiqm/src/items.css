@@ -1,0 +1,20 @@
+.items {
+    background-color: lightblue;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    border-radius: 15px;
+    padding: 5px 5px;
+    transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.items:hover {
+    transform: translateY(-4px);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
