@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
         $address = $_POST["address"];
     }
 
-    if (isset($userName) && $email && $password) {
+    if (isset($userName) && isset($email) && isset($my_password)) {
         $query = "INSERT INTO users (username, email, password, address) VALUES ('$userName', '$email', '$my_password', '$address')";
         $result = mysqli_query($conn, $query);
         if ($result) {
