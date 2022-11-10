@@ -8,6 +8,7 @@ function Header() {
                 <div className="Logo"></div>
                 <div className="website-name">Shopoholic</div>
             </div>
+
             <div className="search-bar">
                 <div class="form-outline">
                     <input
@@ -19,13 +20,24 @@ function Header() {
                     />
                 </div>
             </div>
+
             <div className="order-info">
                 <div className="order-requests">
                     <button>Order & Returns</button>
                 </div>
+
                 <div className="cart">
                     <button>
                         <img src="https://img.icons8.com/ios-glyphs/30/null/shopping-cart--v1.png" />
+                    </button>
+                </div>
+
+                <div className="Profile">
+                    <button>
+                        <img
+                            className="profile-pic"
+                            src="https://img.icons8.com/ios-filled/50/null/guest-male--v1.png"
+                        />
                     </button>
                 </div>
             </div>
