@@ -6,6 +6,8 @@ from time import sleep
 import glob
 
 
+import searchinput
+
 
 # Create an Extractor by reading from the YAML file
 e = Extractor.from_yaml_file('search_results.yml')
@@ -49,18 +51,4 @@ with open("search_url.txt",'r') as urllist, open('search_output.jsonl','w') as o
                 json.dump(product,outfile)
                 outfile.write("\n")
                 # sleep(5)
-
-
-files = [f for f in glob.glob( "auiqm/amazon-scraper-master" + "**/*.jsonl", recursive=True)]
-
-for f in files:
-
-    with open(f, 'rb') as F:
-        i = 1
-        for row in F:
-#saving every line as new json file
-            with open("auiqm/amazon-scraper-master"+"/file-"+str(i)+".json", 'wb') as f:
-                print(f)
-                f.write(row)
-                i+=1
     
