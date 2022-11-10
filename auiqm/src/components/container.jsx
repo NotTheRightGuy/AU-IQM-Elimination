@@ -1,37 +1,20 @@
 import React, { Component } from "react";
 import Item from "./items";
 
+import data from "../data.json";
+
 function Container() {
     return (
         <div className="container">
-            <Item
-                image="image"
-                title="title"
-                price="price"
-                reviews="reviews"
-                ratings="ratings"
-            />
-            <Item
-                image="image"
-                title="title"
-                price="price"
-                reviews="reviews"
-                ratings="ratings"
-            />
-            <Item
-                image="image"
-                title="title"
-                price="price"
-                reviews="reviews"
-                ratings="ratings"
-            />
-            <Item
-                image="image"
-                title="title"
-                price="price"
-                reviews="reviews"
-                ratings="ratings"
-            />
+            {data.map((item) => (
+                <Item
+                    image={item.image}
+                    title={item.title}
+                    price={item.price}
+                    reviews={item.price}
+                    ratings={item.ratings}
+                />
+            ))}
         </div>
     );
 }
