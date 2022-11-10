@@ -4,17 +4,34 @@ import Item from "./items";
 function Container() {
     return (
         <div className="container">
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
+            <Item
+                image="image"
+                title="title"
+                price="price"
+                reviews="reviews"
+                ratings="ratings"
+            />
+            <Item
+                image="image"
+                title="title"
+                price="price"
+                reviews="reviews"
+                ratings="ratings"
+            />
+            <Item
+                image="image"
+                title="title"
+                price="price"
+                reviews="reviews"
+                ratings="ratings"
+            />
+            <Item
+                image="image"
+                title="title"
+                price="price"
+                reviews="reviews"
+                ratings="ratings"
+            />
         </div>
     );
 }
