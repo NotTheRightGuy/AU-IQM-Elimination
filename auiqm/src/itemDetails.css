@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rubik", sans-serif;
+    height: 70px;
+    background-color: lightblue;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.itemDetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+}
+
+.itemImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    height: 400px;
+}
+
+.itemDescription {
+    margin-top: 50px;
+}
+
+.itemName {
+    font-family: "Rubik", sans-serif;
+    font-size: 2rem;
+}
+
+.itemPrice {
+    margin-top: 20px;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.5rem;
+}
+
+.itemQuantity {
+    margin-top: 5px;
+
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+    color: green;
+}
+.itemSize {
+    margin-top: 5px;
+
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+}
+
+.itemColor {
+    margin-top: 5px;
+
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+    color: silver;
+}
+
+.itemInfo {
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 200px;
+}
+
+.addToCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    transition: color 0.5s ease;
+}
+
+.addToCart:hover {
+    background-color: blue;
+    color: white;
+}
+
+.buyNow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    transition: color 0.5s ease;
+}
+
+.buyNow:hover {
+    background-color: blue;
+    color: white;
+}

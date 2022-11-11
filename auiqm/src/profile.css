@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rubik", sans-serif;
+    height: 60px;
+    background-color: lightblue;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 10px;
+}
+
+.container {
+    text-align: center;
+}
+
+.user-image {
+    height: 200px;
+}
+
+.profile-details {
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    /* background-color: lightgoldenrodyellow; */
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+}
+
+.profile-name {
+    vertical-align: top;
+    display: flex;
+    justify-content: center;
+}
+.profile-email {
+    vertical-align: top;
+    display: flex;
+    justify-content: center;
+}
+.profile-phone {
+    vertical-align: top;
+    display: flex;
+    justify-content: center;
+}
+.profile-address {
+    vertical-align: top;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+.buttons button {
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: lightblue;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.buttons button:hover {
+    background-color: blue;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5;
+    cursor: pointer;
+}

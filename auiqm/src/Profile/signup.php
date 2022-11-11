@@ -8,19 +8,19 @@ include('formvalidation.php');
 
 // Check if the sign up button is pressed
 if (isset($_POST['submit'])) {
-    
+
     if (!$_POST["userName"]) {
         $nameError = "Please enter your Username <br>";
     } else {
         $userName = validateFormData($_POST["userName"]);
     }
-    
+
     if (!$_POST["email"]) {
         $emailError = "Please enter your email <br>";
     } else {
         $email = validateFormData($_POST["email"]);
     }
-    
+
     if (!$_POST["pass_word"]) {
         $passwordError = "Please enter your password <br>";
     } else {
@@ -28,15 +28,23 @@ if (isset($_POST['submit'])) {
         $my_password = $pass_word;
     }
 
-    $query = "INSERT INTO users (username, email, password) VALUES ('$userName', '$email', '$my_password')";
-    $result = mysqli_query($conn, $query);
-    if ($result) {
-        header("Location: https://auiqm.netlify.app");
-        // echo "<div class='alert alert-success'>New record created successfully</div>";
+    if (!$_POST["address"]) {
+        $addressError = "Please enter your address <br>";
     } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        $address = $_POST["address"];
     }
-   
+
+    if (isset($userName) && isset($email) && isset($my_password)) {
+        $query = "INSERT INTO users (username, email, password, address) VALUES ('$userName', '$email', '$my_password', '$address')";
+        $result = mysqli_query($conn, $query);
+        if ($result) {
+            header("Location: login.php");
+            // echo "<div class='alert alert-success'>New record created successfully</div>";
+        } else {
+            echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        }
+    }
+
     mysqli_close($conn);
 }
 
@@ -60,29 +68,42 @@ if (isset($_POST['submit'])) {
             <p class="lead">Sign Up Page</p>
         </div>
 
+        <div class="alert alert-warning">
+            Sign Up Here
+        </div>
+
         <p class="text-danger">* Required Fields</p>
         <form action="<?php
                         // echo $_SERVER['PHP_SELF'];
                         echo htmlspecialchars($_SERVER["PHP_SELF"]);
                         ?>" method="post">
-            Username<small class="text-danger">* <?php 
-            if(isset($nameError)){
-                echo $nameError;
-            } ?></small>
+            Username<small class="text-danger">* <?php
+                                                    if (isset($nameError)) {
+                                                        echo $nameError;
+                                                    } ?></small>
+            <br>
             <input type="text" placeholder="Username" name="userName">
             <br>
 
-            Email<small class="text-danger">* <?php if(isset($emailError)){
-                echo $emailError;
-            } ?></small>
+            Email<small class="text-danger">* <?php if (isset($emailError)) {
+                                                    echo $emailError;
+                                                } ?></small>
+            <br>
             <input type="text" placeholder="Email" name="email">
             <br>
 
-            Password<small class="text-danger">* <?php if(isset($passwordError)){
-                echo $passwordError;
-            } ?></small>
+            Password<small class="text-danger">* <?php if (isset($passwordError)) {
+                                                        echo $passwordError;
+                                                    } ?></small>
+            <br>
             <input type="password" placeholder="Password" name="pass_word">
+            <br>
 
+            Address<small class="text-danger">* <?php if (isset($addressError)) {
+                                                    echo $addressError;
+                                                } ?></small>
+            <br>
+            <input type="textbox" placeholder="Address" name="address" class="mb-4">
             <br>
 
             <button type="submit" value="Sign Up" name="submit">Sign Up</button>
