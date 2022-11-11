@@ -4,6 +4,7 @@ import json
 from time import sleep
 import glob
 
+import file_cleaner
 
 # Create an Extractor by reading from the YAML file
 e = Extractor.from_yaml_file('search_results.yml')

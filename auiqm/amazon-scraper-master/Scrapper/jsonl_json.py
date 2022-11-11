@@ -3,7 +3,7 @@ import glob
 
 import searchresults
 
-with open('/Users/hardiksanghvi/Documents/GitHub/AU-IQM-Elimination/auiqm/amazon-scraper-master/search_result_output.jsonl', 'r') as json_file:
+with open('/Users/hardiksanghvi/Documents/GitHub/AU-IQM-Elimination/auiqm/amazon-scraper-master/Scrapper/search_results_output.jsonl', 'r') as json_file:
     json_list = list(json_file)
 
 outfile = open("search_results_output.json","a")

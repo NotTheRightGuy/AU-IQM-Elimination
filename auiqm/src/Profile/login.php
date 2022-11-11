@@ -91,19 +91,21 @@ if (isset($_POST['login'])) {
                         ?>" method="post" class="form-inline">
             <div class="form-group">
                 <label for="login-user_name" class="visually-hidden">Username</label>
-                <small class="text-danger">*</small>
+                Username<small class="text-danger">*</small>
                 <input type="text" placeholder="Username" name="user_name">
             </div>
             <br>
 
             <div class="form-group">
                 <label for="login-pass_word" class="visually-hidden">Password</label>
-                <small class="text-danger">*</small>
+                Password<small class="text-danger">*</small>
                 <input type="password" placeholder="Password" name="pass_word">
             </div>
             <br>
-
-            <button class="btn btn-secondary" type="submit" name="login">Login!</button>
+            
+            <a href="forgotPassword.php" class="form-group text-primary">Forgot Password</a>
+            <br>
+            <button class="btn btn-secondary" type="submit" name="login">Login</button>
         </form>
 
     </div>
