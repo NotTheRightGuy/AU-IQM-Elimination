@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.css";
+import Search from "./search";
 
 function Header() {
     return (
@@ -12,19 +13,7 @@ function Header() {
                 </div> */}
                 <div className="website-name">Shopoholic</div>
             </div>
-
-            <div className="search-bar">
-                <div class="form-outline">
-                    <input
-                        type="search"
-                        id="form1"
-                        class="form-control"
-                        placeholder="Search Among Millions of Products"
-                        aria-label="Search"
-                    />
-                </div>
-            </div>
-
+            <Search />
             <div className="order-info">
                 <div className="order-requests">
                     <button>Order & Returns</button>
@@ -37,7 +26,7 @@ function Header() {
                 </div>
 
                 <div className="Profile">
-                    <button formAction="http://localhost/test/signup.php">
+                    <button>
                         <img
                             className="profile-pic"
                             src="https://img.icons8.com/ios-filled/50/null/guest-male--v1.png"

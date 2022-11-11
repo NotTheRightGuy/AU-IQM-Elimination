@@ -1,2 +1,8 @@
 
-amazon-scraper-master/page.html
+*.txt
+*.json
+*.jsonl
+auiqm/amazon-scraper-master/Input/search_url.txt
+auiqm/amazon-scraper-master/Input/search_output.jsonl
+auiqm/amazon-scraper-master/Input/sample.json
+auiqm/amazon-scraper-master/Input/input.txt

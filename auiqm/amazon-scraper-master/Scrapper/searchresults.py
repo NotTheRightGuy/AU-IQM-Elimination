@@ -2,7 +2,9 @@ from selectorlib import Extractor
 import requests 
 import json 
 from time import sleep
+import glob
 
+import file_cleaner
 
 # Create an Extractor by reading from the YAML file
 e = Extractor.from_yaml_file('search_results.yml')
@@ -46,4 +48,3 @@ with open("search_results_urls.txt",'r') as urllist, open('search_results_output
                 json.dump(product,outfile)
                 outfile.write("\n")
                 # sleep(5)
-    

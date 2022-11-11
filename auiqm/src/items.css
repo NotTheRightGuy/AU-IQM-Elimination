@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
 .items {
-    background-color: lightblue;
+    background-color: #fffbc1;
     display: grid;
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
     border-radius: 15px;
     padding: 5px 5px;
     transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -10,6 +12,24 @@
 
 .items:hover {
     transform: translateY(-4px);
+    cursor: pointer;
+}
+
+.item-image {
+    padding-left: 10px;
+}
+
+.item-title {
+    margin-top: 5px;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item-price {
+    margin-top: 10px;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
 }
 
 .container {
@@ -17,4 +37,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
+}
+.item-url {
+    display: none;
 }
