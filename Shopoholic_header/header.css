@@ -1,4 +1,7 @@
 /*header-left*/
+body {
+    background: #ccc;
+}
 .header-left{
   display: inline-block;
   width: 50px;
@@ -10,11 +13,14 @@
 .cart-image{
   height: 50px;
   width: 50px;
-  margin-right: 20px;
+  margin-left: 100px;
+  margin-top: -10px;
 }
 .profile-image{
   height: 50px;
   width:50px;
+  margin-left: 20px;
+  margin-top: -10px;
 }
 .logo-shopholic{
   height: 75px;
@@ -22,7 +28,6 @@
   margin-left: 50px;
 }
 .search-bar{
-  
   font-size: large;font-family: 'Rubik';
   font-style: normal;
   border-radius: 5px;
@@ -41,7 +46,8 @@
   border: 1px;
   border-radius: 5px;
   font-size: 20px;
-  margin-right: 20px;
+  margin-left: 101px;
+  margin-top: -10px;
 }
 .order-button :hover{
 
@@ -138,4 +144,8 @@ i {
 
 #p3 {
     z-index: 1;
+}
+
+.navbar-color {
+    background: #febe8c;
 }

@@ -1,0 +1,28 @@
+/* body {
+    padding-top: 60px;
+} */
+
+.highlight {
+    background: pink;
+    border: solid 1px #555;
+}
+
+/*
+Alternate for page-header:
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+*/
+
+.input-group .input-group-addon {
+    background: #eee;
+}
+
+#scrollerBox {
+    position: relative;
+    height: inherit;
+    overflow: auto;
+    border: solid 1px #ccc;
+}
