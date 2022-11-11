@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
         $query = "INSERT INTO users (username, email, password, address) VALUES ('$userName', '$email', '$my_password', '$address')";
         $result = mysqli_query($conn, $query);
         if ($result) {
-            header("Location: https://auiqm.netlify.app");
+            header("Location: login.php");
             // echo "<div class='alert alert-success'>New record created successfully</div>";
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
