@@ -3,14 +3,14 @@ import glob
 
 import searchinputresults
 
-with open('/Users/hardiksanghvi/Documents/GitHub/AU-IQM-Elimination/auiqm/amazon-scraper-master/search_output.jsonl', 'r') as json_file:
+with open('/Users/hardiksanghvi/Documents/GitHub/AU-IQM-Elimination/auiqm/amazon-scraper-master/Input/search_output.jsonl', 'r') as json_file:
     json_list = list(json_file)
 
 outfile = open("sample.json","a")
 outfile.write("[")
 for json_str in json_list:
     result = json.loads(json_str)
-    print(f"result: {result}")
+    # print(f"result: {result}")
 
     outfile.write(json_str+","+"\n")
     # print(isinstance(result, dict))

@@ -1,3 +1,5 @@
+import file_cleaner
+
 def main():
   
     infile = open('input.txt', 'r')
