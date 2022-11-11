@@ -11,7 +11,7 @@ function Search() {
                 aria-label="Search"
                 aria-describedby="search-addon"
             />
-            <button type="button" class="btn btn-outline-primary">
+            <button type="button" class="btn btn-primary">
                 search
             </button>
         </div>
