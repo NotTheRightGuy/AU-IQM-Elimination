@@ -139,3 +139,7 @@ i {
 #p3 {
     z-index: 1;
 }
+
+.navbar-color {
+    background: #febe8c;
+}
