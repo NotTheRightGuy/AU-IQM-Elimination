@@ -47,7 +47,7 @@ with open("search_url.txt",'r') as urllist, open('search_output.jsonl','w') as o
         if data:
             for product in data['products']:
                 product['search_url'] = url
-                print("Saving Product: %s"%product['title'])
+                # print("Saving Product: %s"%product['title'])
                 json.dump(product,outfile)
                 outfile.write("\n")
                 # sleep(5)
