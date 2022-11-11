@@ -1,4 +1,7 @@
 /*header-left*/
+body {
+    background: #ccc;
+}
 .header-left{
   display: inline-block;
   width: 50px;
